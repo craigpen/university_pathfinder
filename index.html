@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>University Pathfinder</title>
-<script>
-  // Router: Redirect to pathfinder based on URL hash or default to university
-  const pathfinder = window.location.hash.substring(1) || 'university';
-  window.location.href = `pathfinder/${pathfinder}/`;
-</script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="refresh" content="0; url=https://craigpen.github.io/pathfinder/"/>
+  <title>Redirecting to Pathfinder</title>
+  <script>
+    // Fallback redirect for browsers that don't support meta refresh
+    window.location.href = 'https://craigpen.github.io/pathfinder/';
+  </script>
 </head>
 <body>
-  <p>Loading pathfinder...</p>
+  <p>Redirecting to <a href="https://craigpen.github.io/pathfinder/">Pathfinder</a>...</p>
 </body>
 </html>

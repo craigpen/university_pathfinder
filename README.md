@@ -1,18 +1,28 @@
-# University Pathfinder
+# University Pathfinder (Deprecated)
 
-A minimal repository containing a single HTML page:
+⚠️ **This repository is deprecated.** The code has been moved to the [Pathfinder framework repository](https://github.com/craigpen/pathfinder).
 
-- `university_path_finder_v80.html`
+## Redirect
 
-## Usage
+This GitHub Pages site now automatically redirects to the new location:
+- Old: `https://craigpen.github.io/university_pathfinder/`
+- New: `https://craigpen.github.io/pathfinder/`
 
-Open `university_path_finder_v80.html` directly in a browser.
+If you're not automatically redirected, visit the new site directly: **[Pathfinder Framework](https://craigpen.github.io/pathfinder/)**
 
-If you want to serve it locally, you can use a simple static server such as:
+## What Happened?
 
-```bash
-# from this repo root
-python -m http.server 8000
-```
+The University Pathfinder app has been refactored into a reusable framework that supports multiple pathfinders:
 
-Then open `http://localhost:8000/university_path_finder_v80.html`.
+- ✅ **University Pathfinder** — Still available at the new location
+- ✅ **Bootcamp Pathfinder** — New pathfinder built on the same framework
+- ✅ **Generic Framework** — Foundation for building more pathfinders
+
+All code, issues, and future development will be in the new [Pathfinder repository](https://github.com/craigpen/pathfinder).
+
+## Development
+
+See the [Pathfinder repository](https://github.com/craigpen/pathfinder) for:
+- Development guidelines ([CLAUDE.md](https://github.com/craigpen/pathfinder/blob/main/CLAUDE.md))
+- Architecture overview ([README.md](https://github.com/craigpen/pathfinder/blob/main/README.md))
+- Active issues and pull requests
