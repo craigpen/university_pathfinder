@@ -1,0 +1,21 @@
+﻿services:
+  web:
+    image: nginx:alpine
+    container_name: dev-university-pathfinder
+    restart: unless-stopped
+    ports:
+      - "3602:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    networks:
+      - dev-net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=dev-net"
+      - "traefik.http.routers.university.rule=Host(`university.localhost`) || Host(`university_pathfinder.localhost`) || Host(`university`)"
+      - "traefik.http.services.university.loadbalancer.server.port=80"
+
+networks:
+  dev-net:
+    name: dev-net
+    external: true
